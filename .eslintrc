@@ -1,0 +1,4 @@
+{
+  "extends": "cleanjs",
+  "parser": "babel-eslint"
+}
