@@ -15,7 +15,7 @@ export type Cons<A> =
 // we can't call the value of type `Nil` `Nil`.
 // We call it `MkNil` here, even though this is not a function
 
-export const MkNil = { type: 'Nil' }
+export const MkNil: List<*> = { type: 'Nil' }
 
 // MkCons is used for creating a Cons value
 
@@ -41,7 +41,14 @@ export type ConsC<A> =
   , tail: ListC<A>
   }
 
-export const MkNilC: NilC = { fold: <A, B>(_: A, b: B): B => b }
+export const MkNilC: ListC<*> = {
+
+  // eslint problems forced this way ...
+  fold: function <B>(_, b: B): B {
+    return b
+  }
+
+}
 
 export const MkConsC = <A>(head: A, tail: ListC<A>): ListC<A> => (
   { fold: (f, b) => f(head, tail.fold(f, b))
