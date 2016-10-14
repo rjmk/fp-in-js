@@ -44,5 +44,5 @@ I thought we might start with
 
 ## Tentative schedule
 
-Weekly, Fridays, 3:30-4:30?
+Weekly, Fridays, 1:30-2:30?
 
