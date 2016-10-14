@@ -23,8 +23,8 @@ deepEqual
 
 declare function flatten <A>(as: List<List<A>>): List<A>
 deepEqual
-  ( flatten(new Cons(new Cons(1, new Cons(3, new Nil)), new Cons(new Cons(4, new Nil), new Cons(1, new Nil))))
-  , new Cons(3, new Cons(4, new Cons(1, new Nil))))
+  ( flatten(new Cons(new Cons(1, new Cons(3, new Nil)), new Cons(new Cons(4, new Nil), new Cons(new Cons(1, new Nil), new Nil))))
+  , new Cons(1, new Cons(3, new Cons(4, new Cons(1, new Nil)))))
 
 declare function map <A, B>(f: (a: A) => B, as: List<A>): List<B>
 deepEqual
