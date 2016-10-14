@@ -10,7 +10,7 @@ import { Cons, Nil } from './List'
 match the required signature and the tests. */
 
 declare function last <A>(as: List<A>): ?A
-deepEqual(last(new new Cons(3, new new Cons(4, new new Cons(1, new Nil)))), 1) // eslint-disable-line
+deepEqual(last(new Cons(3, new Cons(4, new Cons(1, new Nil)))), 1) // eslint-disable-line
 
 
 declare function penultimate <A>(as: List<A>): ?A
