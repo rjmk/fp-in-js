@@ -16,7 +16,11 @@ function last <A>(as: List<A>): ?A {
 deepEqual(last(new Cons(3, new Cons(4, new Cons(1, new Nil)))), 1)
 
 
-declare function penultimate <A>(as: List<A>): ?A
+function penultimate <A>(as: List<A>): ?A {
+  if (as instanceof Nil) return undefined
+  if (as.tail instanceof Nil) return undefined
+  return as.tail.tail instanceof Nil ? as.head : penultimate(as.tail)
+}
 deepEqual(penultimate(new Cons(3, new Cons(4, new Cons(1, new Nil)))), 4)
 
 declare function reverse <A>(as:List<A>): List<A>
