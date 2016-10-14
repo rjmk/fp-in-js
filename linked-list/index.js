@@ -16,14 +16,14 @@ deepEqual(last(MkCons(3, MkCons(4, MkCons(1, MkNil)))), 1) // eslint-disable-lin
 declare function penultimate <A>(as: List<A>): A
 deepEqual(penultimate(MkCons(3, MkCons(4, MkCons(1, MkNil)))), 4) // eslint-disable-line
 
-declare function reverse <A>(as:List<A>): A
+declare function reverse <A>(as:List<A>): List<A>
 deepEqual // eslint-disable-line
   ( reverse(MkCons(3, MkCons(4, MkCons(1, MkNil))))
-  , MkCons(1, MkCons(4, MkCons(4, MkNil))))
+  , MkCons(1, MkCons(4, MkCons(3, MkNil))))
 
 declare function flatten <A>(as: List<List<A>>): List<A>
 deepEqual // eslint-disable-line
-  ( flatten(MkCons(MkCons(3, MkNil), MkCons(MkCons(4, MkNil), MkCons(1, MkNil))))
+  ( flatten(MkCons(MkCons(1, MkCons(3, MkNil)), MkCons(MkCons(4, MkNil), MkCons(1, MkNil))))
   , MkCons(3, MkCons(4, MkCons(1, MkNil))))
 
 declare function map <A, B>(f: (a: A) => B, as: List<A>): List<B>
