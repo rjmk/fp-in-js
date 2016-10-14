@@ -4,12 +4,10 @@
   "description": "A scaffold for Guardian Functional Programming in JavaScript meetings",
   "main": "index.js",
   "scripts": {
-    "test": "flow && npm run lint",
-    "test-fast": "flow & npm run lint",
+    "test": "flow",
     "flow": "flow",
     "babel": "babel-node --presets stage-0 --presets latest --plugins transform-flow-strip-types",
-    "start": "npm run babel -- main.js",
-    "lint": "eslint ."
+    "start": "npm run babel -- main.js"
   },
   "repository": {
     "type": "git",
@@ -23,12 +21,9 @@
   "homepage": "https://github.com/rjmk/fp-in-js#readme",
   "devDependencies": {
     "babel-cli": "6.16.0",
-    "babel-eslint": "7.0.0",
     "babel-plugin-transform-flow-strip-types": "6.14.0",
     "babel-preset-latest": "6.16.0",
     "babel-preset-stage-0": "6.16.0",
-    "eslint": "3.7.1",
-    "eslint-config-cleanjs": "4.0.0",
     "flow-bin": "0.33.0"
   }
 }

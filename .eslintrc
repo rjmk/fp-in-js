@@ -1,8 +1,0 @@
-{
-  "extends": "cleanjs",
-  "parser": "babel-eslint",
-  "rules": {
-    "fp/no-nil": "off",
-    "fp/no-classes": "off"
-  }
-}

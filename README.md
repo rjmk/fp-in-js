@@ -25,10 +25,13 @@ but this seemed the way that was quickest for me and you of getting setup.
 ## Groundwork
 
 We're set up to use whichever features of ESWhenever that we feel the need for.
-A linter enforces non-mutation.
 Flow is in place.
-The only file that should cause side-effects is `main.js`
-Everything else should be as pure as possible
+Everything should be as pure as possible
+
+### Apologies for the classes
+
+To make flow happy, we're going to be using classes.
+It's a bit gross, but it works.
 
 ## Plan of attack
 
