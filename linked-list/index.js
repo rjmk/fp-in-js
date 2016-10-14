@@ -9,11 +9,11 @@ import { MkCons, MkNil } from './List'
 /* For the following exercises, see if you can write functions which
 match the required signature and the tests. */
 
-declare function last <A>(as: List<A>): A
+declare function last <A>(as: List<A>): ?A
 deepEqual(last(MkCons(3, MkCons(4, MkCons(1, MkNil)))), 1) // eslint-disable-line
 
 
-declare function penultimate <A>(as: List<A>): A
+declare function penultimate <A>(as: List<A>): ?A
 deepEqual(penultimate(MkCons(3, MkCons(4, MkCons(1, MkNil)))), 4) // eslint-disable-line
 
 declare function reverse <A>(as:List<A>): List<A>
