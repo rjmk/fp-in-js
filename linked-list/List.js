@@ -4,7 +4,6 @@
 // There are two cases: either an empty list or a value followed by a linked list
 export type List<A> = Nil | Cons<A>
 
-// We'll start our typing adventure by just using a 'type' field on an object
 export class Nil {}
 
 export class Cons<A> {
