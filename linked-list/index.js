@@ -9,7 +9,10 @@ import { Cons, Nil } from './List'
 /* For the following exercises, see if you can write functions which
 match the required signature and the tests. */
 
-declare function last <A>(as: List<A>): ?A
+function last <A>(as: List<A>): ?A {
+  if (as instanceof Nil) return undefined
+  return as.tail instanceof Nil ? as.head : last(as.tail)
+}
 deepEqual(last(new Cons(3, new Cons(4, new Cons(1, new Nil)))), 1)
 
 
