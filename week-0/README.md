@@ -9,7 +9,9 @@ In `arrow-functions.js` there are a few examples of arrow functions.
 Run it with `npm run babel -- week-0/arrow-functions.js`
 
 If you uncomment the commented code,
-some of the output is not what's expected.
+you will have some problems.
+There may be syntax errors,
+or some of the output may not be what's expected.
 
 In `classes.js` you can see some examples of ES6 Classes.
 They're kind of pointless outside of flow.
