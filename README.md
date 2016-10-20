@@ -2,7 +2,9 @@
 
 This is some setup for us to do typed functional programmin in JavaScript.
 Some words from Dr Boolean to give us some context:
+
 **[Why FP][why-fp]**
+
 **[Why types][why-types]**
 (We're using flow as there is no Hindley Milner typechecker for JavaScript)
 
@@ -25,6 +27,8 @@ This means you don't have to do `./node_modules/.bin/flow myFile.js` or whatever
 Instead you can `npm run flow -- myFile.js`.
 Or, **to run code**, `rpm run babel -- myFile.js`.
 (Okay, maybe not a HUGE improvement).
+
+**Have a play around in `week-0`.**
 
 Please let me know if you have any issues with getting all of this setup!
 
