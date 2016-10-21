@@ -14,7 +14,8 @@ Some words from Dr Boolean to give us some context:
 ## Usage
 
 I have made lots of stuff that should really be peer deps as dev deps.
-This means you can just clone this repo and `npm i` and get everything you need.
+This means you can just clone this repo and `npm i` (or `yarn install`)
+and get everything you need.
 (It will take a few minutes).
 
 Try running the test script `npm t / npm test`.
